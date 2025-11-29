@@ -34,6 +34,12 @@
             transform: translateY(-2px) scale(1.03);
             box-shadow: 0 8px 20px rgba(250, 202, 21, 0.7);
         }
+        /* Mobile adjustment for product details */
+        .product-card {
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 <body class="text-gray-800">
@@ -48,35 +54,34 @@
             <p class="mt-2 text-xl text-gray-600">डर के घेरे को तोड़कर संपत्ति को सुरक्षित रूप से कैसे बढ़ाएं</p>
         </header>
 
-        <!-- Product Description (Compliance Requirement) -->
-        <section id="product-details" class="mt-10 p-6 bg-white rounded-xl shadow-lg border border-yellow-200">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 text-center">ई-बुक विवरण</h2>
-            <div class="space-y-3 text-lg">
-                <p>
-                    <strong class="font-semibold text-orange-600">उत्पाद का नाम:</strong> सोने की मुर्गी का रहस्य: डर के घेरे को तोड़ें और संपत्ति सुरक्षित बढ़ाएँ
-                </p>
-                <p>
-                    <strong class="font-semibold text-orange-600">प्रारूप:</strong> डिजिटल ई-बुक (PDF)
-                </p>
-                <p>
-                    <strong class="font-semibold text-orange-600">पृष्ठ संख्या:</strong> 130–140 पृष्ठों का गहन ज्ञान
-                </p>
-                <p>
-                    <strong class="font-semibold text-orange-600">सामग्री सार:</strong> यह पुस्तक Fastlane रणनीतियों को P/PC संतुलन, भावनात्मक बुद्धिमत्ता और स्वास्थ्य के दर्शन के साथ जोड़ती है। यह सिखाती है कि कैसे डर और भावनात्मक बाधाओं पर काबू पाकर, अपनी मूल संपत्ति (PC) को सुरक्षित रखते हुए Fastlane व्यवसाय का निर्माण किया जाए।
-                </p>
+        <!-- Main Selling Points/Book Summary -->
+        <section class="mt-10 text-center">
+            <h2 class="text-3xl font-bold text-gray-900">अपने जीवन की सबसे बड़ी दौलत—अपनी 'सोने की मुर्गी'—को सुरक्षित रखते हुए Fastlane पर चलें!</h2>
+            <p class="mt-4 text-xl text-gray-600">यह ई-बुक आपको सिखाएगी:</p>
+            <ul class="list-disc list-inside text-left mx-auto max-w-lg mt-4 space-y-2 text-lg text-gray-700">
+                <li class="pl-2">डर (जैसे EMI का डर) को अपनी **उत्पादन क्षमता (PC)** को बढ़ाने के लिए कैसे उपयोग करें।</li>
+                <li class="pl-2">Fastlane के पाँच स्तंभों (नियंत्रण, प्रवेश, **आवश्यकता**, मापन, समय) का उपयोग करके एक स्केलेबल ऑनलाइन सिस्टम कैसे बनाएँ।</li>
+                <li class="pl-2">अपने **अवचेतन मन** की शक्ति से नकारात्मक आदतों (जैसे बदला लेने की जिद) को कैसे बदलें।</li>
+                <li class="pl-2">वित्तीय जोखिम को शून्य करने के लिए **मूलधन और ब्याज को अलग करने** की गुप्त रणनीति।</li>
+            </ul>
+        </section>
+        
+        <!-- Product Details for Compliance (Simplified Card) -->
+        <section id="product-details" class="mt-10 p-6 bg-white rounded-xl shadow-lg border border-yellow-200 product-card">
+            <h3 class="text-xl font-bold text-orange-600 mb-3 text-center">ई-बुक सारांश</h3>
+            <div class="flex justify-between items-center border-b pb-2 mb-2">
+                <span class="font-semibold">उत्पाद का नाम:</span>
+                <span>सोने की मुर्गी का रहस्य</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="font-semibold">प्रारूप:</span>
+                <span>डिजिटल PDF (130–140 पृष्ठ)</span>
             </div>
         </section>
 
-        <!-- Main Content (Simplified for brevity) -->
-        <section class="mt-10 text-center">
-            <h2 class="text-3xl font-bold text-gray-900">आपकी वित्तीय आज़ादी बस एक क्लिक दूर है।</h2>
-            <p class="mt-4 text-xl text-gray-600">Fastlane सिद्धांतों के साथ, आप अपनी सोने की मुर्गी (सुरक्षा) को खतरे में डाले बिना अमीर बन सकते हैं।</p>
-        </section>
-
-
         <!-- CTA Section with Price (Compliance Requirement) -->
         <section id="cta" class="mt-12 text-center p-6 bg-yellow-100 rounded-2xl shadow-xl">
-            <h3 class="text-2xl font-semibold mb-3 text-gray-700">आज ही डाउनलोड करें:</h3>
+            <h3 class="text-2xl font-semibold mb-3 text-gray-700">आज ही डाउनलोड करें और डर के घेरे को तोड़ें!</h3>
             
             <p class="text-5xl font-extrabold my-4">
                 केवल <span class="text-gold">₹399</span> 
@@ -84,6 +89,7 @@
             </p>
             <p class="text-sm text-red-600 mb-6">सीमित समय के लिए लॉन्च ऑफर।</p>
             
+            <!-- Button (Placeholder for payment gateway integration) -->
             <button class="cta-button w-full sm:w-2/3 md:w-1/2 bg-yellow-500 hover:bg-yellow-600 text-white text-2xl font-bold py-4 px-8 rounded-full shadow-lg transition duration-300 ease-in-out">
                 तुरंत खरीदें और डाउनलोड करें
             </button>
@@ -92,57 +98,21 @@
 
         <!-- Customer Support (Crucial for Compliance) -->
         <section id="support" class="mt-12 pt-8 border-t border-yellow-300">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">ग्राहक सहायता और शिकायत निवारण</h2>
-            <div class="bg-white p-6 rounded-xl shadow-md border border-red-200">
-                <p class="text-lg mb-4">
-                    यदि आपको ई-बुक डाउनलोड करने में कोई समस्या आती है, रिफंड चाहिए, या कोई अन्य शिकायत है, तो कृपया नीचे दिए गए माध्यमों से संपर्क करें।
-                </p>
-                <p class="text-xl font-semibold text-red-600">Email: kbulbul026@gmail.com</p>
-                <p class="text-xl font-semibold text-red-600">Address: Village: BHALBINDHA, Post: Magdiha, Deoghar, Jharkhand - 814150</p>
-                <p class="text-sm text-gray-500 mt-2">सभी प्रश्नों का उत्तर 24-48 घंटों के भीतर दिया जाएगा।</p>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 text-center">ग्राहक सहायता और शिकायत निवारण</h2>
+            <div class="bg-white p-4 rounded-xl shadow-md border border-red-200 max-w-xl mx-auto">
+                <p class="text-base font-semibold text-red-600">Email: kbulbul026@gmail.com</p>
+                <p class="text-base font-semibold text-red-600">Address: Village: BHALBINDHA, Post: Magdiha, Deoghar, Jharkhand - 814150</p>
+                <p class="text-xs text-gray-500 mt-2">सभी प्रश्नों का उत्तर 24-48 घंटों के भीतर दिया जाएगा।</p>
             </div>
         </section>
 
-        <!-- Legal Policies (Compliance Requirement) -->
-        <section id="legal-policies" class="mt-12 pt-8 border-t border-yellow-300 space-y-10">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">कानूनी नीतियां</h2>
-
-            <!-- Refund Policy -->
-            <div>
-                <h3 class="text-2xl font-bold mb-2 text-orange-700">Refund Policy (वापसी नीति)</h3>
-                <p class="text-gray-700">
-                    हम डिजिटल ई-बुक्स बेचते हैं। क्योंकि सामग्री तुरंत उपलब्ध हो जाती है, इसलिए खरीद के बाद सामान्य रूप से रिफंड नहीं होता है।
-                </p>
-                <p class="text-gray-700 mt-2">
-                    **रिफंड का अधिकार:** यदि किसी **तकनीकी कारण** से (जैसे डाउनलोड लिंक काम न करना, भुगतान होने के बावजूद ई-बुक प्राप्त न होना) आप सामग्री प्राप्त नहीं कर पाते हैं, तो आप पूर्ण रिफंड के पात्र हैं।  
-                    रिफंड आपके <strong>original payment method</strong> में  
-                    <strong>3–7 business days</strong> के भीतर क्रेडिट कर दिया जाएगा।
-                </p>
-            </div>
-
-            <!-- Privacy Policy -->
-            <div>
-                <h3 class="text-2xl font-bold mb-2 text-orange-700">Privacy Policy (गोपनीयता नीति)</h3>
-                <p class="text-gray-700">
-                    हम आपकी प्राइवेसी का सम्मान करते हैं।  
-                    आपकी Email, Order Details और Payment Details सुरक्षित रखी जाती हैं।  
-                    हम आपकी जानकारी का उपयोग केवल आपके ऑर्डर को संसाधित करने और आपको महत्वपूर्ण अपडेट भेजने के लिए करते हैं। आपकी जानकारी किसी तीसरे पक्ष के साथ साझा नहीं की जाती।
-                </p>
-            </div>
-
-            <!-- Terms -->
-            <div>
-                <h3 class="text-2xl font-bold mb-2 text-orange-700">Terms & Conditions (नियम और शर्तें)</h3>
-                <p class="text-gray-700">
-                    सभी डिजिटल ई-बुक्स केवल **व्यक्तिगत, गैर-व्यावसायिक उपयोग** के लिए हैं।  
-                    किसी भी प्रकार की पुनर्प्रसारण (Redistribution), कॉपी, शेयर या Resell करना सख्ती से प्रतिबंधित है।  
-                    यह ई-बुक लेखक की बौद्धिक संपदा है। भुगतान पूर्ण होने पर आपको तुरंत डाउनलोड लिंक प्राप्त होगी, जिसका उपयोग केवल एक व्यक्ति कर सकता है।
-                </p>
-            </div>
-
-        </section>
-
+        <!-- Legal Links in Footer (Compliance Requirement) -->
         <footer class="text-center text-sm text-gray-500 py-6 border-t mt-10 border-yellow-300">
+            <div class="space-x-4 mb-3 text-base font-semibold">
+                <a href="refund_policy.html" target="_blank" class="text-blue-600 hover:text-blue-800">Refund Policy</a>
+                <a href="privacy_policy.html" target="_blank" class="text-blue-600 hover:text-blue-800">Privacy Policy</a>
+                <a href="terms_conditions.html" target="_blank" class="text-blue-600 hover:text-blue-800">Terms & Conditions</a>
+            </div>
             © 2025 Fastlane Publication — Owned & Managed by <strong>Bulbul Kumari</strong>. All Rights Reserved.
         </footer>
 
